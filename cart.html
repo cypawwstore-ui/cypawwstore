@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja - 🌸SYPA STORE🌸</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Keranjang Belanja</h1>
+        <a href="index.html" class="back-button">← Lanjut Belanja</a>
+    </header>
+
+    <main class="container">
+        <section id="cart-items">
+            </section>
+
+        <section id="checkout-form" class="checkout-box">
+            <h2>Detail Pemesanan</h2>
+            <form id="order-details-form">
+                <div class="form-group">
+                    <label for="buyer-name">Nama Pembeli:</label>
+                    <input type="text" id="buyer-name" required placeholder="Cth: Budi Santoso">
+                </div>
+                <div class="form-group">
+                    <label for="player-id">ID Player Free Fire:</label>
+                    <input type="text" id="player-id" required placeholder="Masukkan ID Game Anda (Cth: 123456789)">
+                </div>
+                <div class="total-price-box">
+                    <p>Total Harga: <span id="total-price">Rp 0</span></p>
+                </div>
+                <button type="submit" class="whatsapp-button">
+                    Pesan Sekarang via WhatsApp
+                </button>
+                <small class="whatsapp-info">Anda akan diarahkan ke WhatsApp +6282125494438 untuk menyelesaikan pembayaran.</small>
+            </form>
+        </section>
+        
+        <p id="empty-cart-message" style="text-align: center; color: #555; display: none;">Keranjang Anda masih kosong. Yuk, pilih produk favoritmu!</p>
+    </main>
+
+    <footer>
+        <p>© 2025 🌸SYPA STORE🌸. Layanan Pelanggan: +6282125494438</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
